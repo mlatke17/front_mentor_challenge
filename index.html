@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<!-- external style sheet
+   -->
+
+		<!-- fontawesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/tailwind.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | [Blogr]</title>
+	</head>
+	<body>
+		<!-- nav section -->
+
+		<div
+			class="w-full px-36 py-16 mx-auto flex justify-between z-20 bg-gradient-to-r from-red-400 to-red-500 "
+		>
+			<!-- left section -->
+
+			<div class="flex">
+				<!-- logo section -->
+				<svg
+					width="101"
+					height="40"
+					class="mx-8"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M0 30.803V1.486h10.653c1.982 0 3.695.31 5.14.93 1.446.619 2.56 1.5 3.345 2.642.785 1.142 1.177 2.484 1.177 4.026 0 1.404-.303 2.636-.909 3.695a6.48 6.48 0 01-2.56 2.498c1.487.578 2.643 1.494 3.469 2.746.826 1.253 1.239 2.732 1.239 4.439 0 1.707-.44 3.18-1.322 4.418-.88 1.239-2.12 2.202-3.716 2.89-1.596.688-3.482 1.033-5.657 1.033H0zM5.946 6.565v6.73h4.046c1.35 0 2.388-.282 3.118-.846.73-.564 1.094-1.397 1.094-2.498 0-1.101-.365-1.94-1.094-2.519-.73-.578-1.769-.867-3.118-.867H5.946zm0 19.159h4.624c1.542 0 2.732-.33 3.572-.991.84-.66 1.26-1.61 1.26-2.85 0-1.238-.42-2.188-1.26-2.848-.84-.66-2.03-.991-3.572-.991H5.946v7.68zm19.282 5.079V0h5.781v30.803h-5.78zm20.893.619c-1.624 0-3.124-.29-4.5-.867a10.94 10.94 0 01-3.593-2.416 10.96 10.96 0 01-2.374-3.654c-.564-1.404-.846-2.931-.846-4.583 0-1.652.289-3.173.867-4.563a11.354 11.354 0 012.415-3.654 10.96 10.96 0 013.634-2.436c1.39-.578 2.91-.867 4.562-.867 1.625 0 3.125.289 4.501.867a10.94 10.94 0 013.592 2.416 11.01 11.01 0 012.375 3.633c.564 1.39.846 2.911.846 4.563 0 1.651-.289 3.179-.867 4.583a11.297 11.297 0 01-2.416 3.675 10.96 10.96 0 01-3.633 2.436c-1.39.578-2.911.867-4.563.867zm.083-5.203c1.046 0 1.982-.275 2.808-.825.825-.551 1.48-1.301 1.96-2.25.483-.95.723-2.03.723-3.242 0-1.211-.24-2.292-.722-3.241-.482-.95-1.136-1.7-1.961-2.25-.826-.551-1.762-.826-2.808-.826-1.046 0-1.982.275-2.808.825-.826.55-1.48 1.301-1.961 2.25-.482.95-.723 2.03-.723 3.242 0 1.211.241 2.292.723 3.241.482.95 1.135 1.7 1.961 2.25.826.551 1.762.826 2.808.826zm24.155 3.964a9.13 9.13 0 01-3.86-.826 9.492 9.492 0 01-3.118-2.291c-.881-.977-1.57-2.12-2.065-3.427-.495-1.308-.743-2.719-.743-4.233 0-1.569.255-3.02.764-4.356a10.614 10.614 0 012.147-3.489 10.174 10.174 0 013.22-2.333c1.225-.564 2.554-.846 3.985-.846 1.404 0 2.67.282 3.799.846a7.402 7.402 0 012.807 2.457l.124-2.684h5.327v19.2c0 1.68-.269 3.207-.805 4.584-.537 1.376-1.301 2.56-2.292 3.55a10.231 10.231 0 01-3.53 2.292c-1.363.537-2.87.805-4.522.805-1.624 0-3.083-.254-4.376-.764a10.468 10.468 0 01-3.386-2.126 10.035 10.035 0 01-2.271-3.18L67.097 32a5.452 5.452 0 001.92 1.879c.784.454 1.672.681 2.663.681 1.074 0 2.003-.24 2.787-.723.785-.481 1.397-1.156 1.838-2.023.44-.867.66-1.879.66-3.035v-1.775a7.793 7.793 0 01-2.828 2.333c-1.143.564-2.402.846-3.778.846zm1.404-5.12c1.018 0 1.92-.254 2.704-.764a5.556 5.556 0 001.879-2.064c.468-.867.702-1.851.702-2.952 0-1.102-.234-2.086-.702-2.953a5.556 5.556 0 00-1.879-2.064c-.784-.51-1.686-.764-2.704-.764-1.019 0-1.92.255-2.705.764a5.556 5.556 0 00-1.879 2.064c-.468.867-.702 1.851-.702 2.953 0 1.1.234 2.085.702 2.952a5.556 5.556 0 001.88 2.064c.784.51 1.685.764 2.704.764zm15.607 5.74V9h5.327l.206 3.304c.55-1.157 1.294-2.044 2.23-2.664.936-.62 2.037-.929 3.303-.929.386 0 .77.035 1.156.103.386.07.73.159 1.033.269l-.62 5.698a4.361 4.361 0 00-.929-.227 7.495 7.495 0 00-.97-.062c-1.597 0-2.822.489-3.675 1.466-.853.977-1.28 2.36-1.28 4.15v10.694h-5.78z"
+						fill="white"
+						fill-rule="nonzero"
+					/>
+				</svg>
+
+				<a
+					href="#"
+					class="mx-4 mt-2 text-gray-200 font-semibold hover:underline"
+					>Products <i class="fas fa-chevron-down mx-2"></i
+				></a>
+
+				<a
+					href="#"
+					class="mx-4 mt-2 text-gray-200 font-semibold hover:underline"
+					>Company <i class="fas fa-chevron-down mx-2"></i>
+				</a>
+
+				<a
+					href="#"
+					class="mx-4 mt-2 text-gray-200 font-semibold hover:underline"
+					>Connect <i class="fas fa-chevron-down mx-2"></i
+				></a>
+			</div>
+
+			<!-- right section -->
+
+			<div class="">
+				<a href="#" class="text-lg font-semibold mr-4 text-gray-600">Login</a>
+				<a
+					href="#"
+					class="rounded-full py-3 px-6 bg-gray-100 bg-opacity-25 text-lg font-semibold mr-4 text-gray-200"
+					>Signup</a
+				>
+			</div>
+		</div>
+
+		<!-- hero section -->
+
+		<div
+			class="pt-14 pb-28 text-center bg-gradient-to-r from-red-400 to-red-500 rounds"
+		>
+			<h1 class="font-extrabold text-6xl text-gray-50">
+				A mordern publishing platform
+			</h1>
+			<p class="text-gray-200 font-md text-normal mt-4 mb-8">
+				Grow your audience and build your online brand
+			</p>
+			<a
+				href="#"
+				class="inline-block px-6 py-3 mt-4 bg-gray-100 bg-opacity-25 text-lg font-semibold mr-4 rounded-full"
+				>Start for free
+			</a>
+			<a
+				href="#"
+				class="inline-block px-6 py-3 mt-4 bg-gray-50 bg-opacity-75 text-lg text-red-400 hover:underline font-semibold mr-4 rounded-full"
+				>Learn more</a
+			>
+		</div>
+
+		<!-- desgin for the future  sections-->
+		<div class="mt-28 text-center mb-28">
+			<h1 class="font-bold text-5xl mb-8 text-blue-900">
+				Designed for the future
+			</h1>
+			<div class="flex text-center gap-x-5">
+				<!-- left section -->
+				<div class="text-center">
+					<h2
+						class="text-left font-semibold text-3xl mt-28 ml-16 text-blue-700"
+					>
+						Introducing an extensible editor
+					</h2>
+					<p class="text-left font-medium text-2xl mt-12 ml-16 text-gray-600">
+						Blogr features an exceedingly intuitive interface which lets you
+						focus on one thing: creating content. The editor supports management
+						of multiple blogs and allows easy manipulation of embeds such as
+						images, videos, and Markdown. Extensibility with plugins and themes
+						provide easy ways to add functionality or change the looks of a
+						blog.
+					</p>
+
+					<h2
+						class="text-left font-semibold text-3xl ml-16 mt-24 text-blue-700"
+					>
+						Robust content management
+					</h2>
+					<p
+						class="text-left font-medium text-2xl mt-12 mb-8 ml-16 text-gray-600"
+					>
+						Flexible content management enables users to easily move through
+						posts. Increase the usability of your blog by adding customized
+						categories, sections, format, or flow. With this functionality,
+						you’re in full control.
+					</p>
+				</div>
+
+				<!-- right section -->
+
+				<div>
+					<!-- laptop image -->
+
+					<svg
+						width="925"
+						height="882"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs>
+							<linearGradient
+								x1="0%"
+								y1="27.881%"
+								x2="100%"
+								y2="72.119%"
+								id="c"
+							>
+								<stop stop-color="#FF8F71" offset="0%" />
+								<stop stop-color="#FF3E55" offset="100%" />
+							</linearGradient>
+							<linearGradient
+								x1="0%"
+								y1="41.725%"
+								x2="100%"
+								y2="58.275%"
+								id="e"
+							>
+								<stop stop-color="#FF8F71" offset="0%" />
+								<stop stop-color="#FF3E55" offset="100%" />
+							</linearGradient>
+							<filter
+								x="-10.9%"
+								y="-11.7%"
+								width="121.8%"
+								height="132.8%"
+								filterUnits="objectBoundingBox"
+								id="b"
+							>
+								<feOffset
+									dy="20"
+									in="SourceAlpha"
+									result="shadowOffsetOuter1"
+								/>
+								<feGaussianBlur
+									stdDeviation="20"
+									in="shadowOffsetOuter1"
+									result="shadowBlurOuter1"
+								/>
+								<feColorMatrix
+									values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0"
+									in="shadowBlurOuter1"
+								/>
+							</filter>
+							<rect id="a" x="0" y="0" width="642" height="427" rx="15" />
+						</defs>
+						<g transform="translate(40)" fill="none" fill-rule="evenodd">
+							<rect
+								fill="#2D2E40"
+								opacity=".08"
+								transform="matrix(1 0 0 -1 0 890)"
+								x="145"
+								y="144"
+								width="600"
+								height="602"
+								rx="300"
+							/>
+							<rect
+								stroke="#2D2E40"
+								opacity=".5"
+								transform="matrix(1 0 0 -1 0 882)"
+								x="105.5"
+								y="100.5"
+								width="679"
+								height="681"
+								rx="339.5"
+							/>
+							<rect
+								stroke="#2D2E40"
+								opacity=".25"
+								transform="matrix(1 0 0 -1 0 882)"
+								x="5.5"
+								y=".5"
+								width="879"
+								height="881"
+								rx="439.5"
+							/>
+							<g transform="translate(0 242)">
+								<mask id="d" fill="#fff"><use xlink:href="#a" /></mask>
+								<g fill-rule="nonzero">
+									<use fill="#000" filter="url(#b)" xlink:href="#a" />
+									<use fill="url(#c)" xlink:href="#a" />
+								</g>
+								<path
+									d="M3 125h636a3 3 0 013 3v296a3 3 0 01-3 3H3a3 3 0 01-3-3V128a3 3 0 013-3z"
+									fill="#2D2E40"
+									fill-rule="nonzero"
+									mask="url(#d)"
+								/>
+								<rect
+									fill="#FFF"
+									fill-rule="nonzero"
+									mask="url(#d)"
+									x="90.523"
+									y="47.709"
+									width="135.785"
+									height="137.165"
+									rx="3"
+								/>
+								<ellipse
+									fill="#2D2E40"
+									mask="url(#d)"
+									cx="158.416"
+									cy="116.888"
+									rx="39.306"
+									ry="39.36"
+								/>
+								<rect
+									fill="#FFF"
+									fill-rule="nonzero"
+									mask="url(#d)"
+									x="248.939"
+									y="47.709"
+									width="302.538"
+									height="325.617"
+									rx="3"
+								/>
+							</g>
+							<path
+								d="M209 284c47.125-73.367 81.977-113.013 104.557-118.938 33.87-8.886 23.765 83.14 72.535 72.473 48.77-10.666 54.716-103.974 91.603-108.37 36.887-4.397 56.402 80.946 72.515 88.81 10.742 5.241 24.005-6.094 39.79-34.007"
+								stroke="url(#e)"
+								stroke-width="8"
+								stroke-linecap="round"
+								transform="translate(0 242)"
+							/>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- state of the art section -->
+		<div class="bg-blue-800 mb-36 rounds-tr h-96 rounds-bl flex">
+			<!-- left section -->
+			<div>
+				<!-- circle _svg -->
+
+				<!-- mobile img -->
+				<img src="images/illustration-phones.svg" class="mx-24 my-14" alt="a mobile" width="500px">
+				<!-- circle image -->
+			</div>
+
+			<!-- right section -->
+			<div>
+				<h1 class="text-center font-semibold text-4xl mt-36 text-gray-50">
+					State of the Art Infrastructure
+				</h1>
+				<p
+					class="text-center font-medium text-2xl mt-12 mb-12 mr-20 ml-20 text-gray-400"
+				>
+					With reliability and speed in mind, worldwide data centers provide the
+					backbone for ultra-fast connectivity. This ensures your site will load
+					instantly, no matter where your readers are, keeping your site
+					competitive.
+				</p>
+			</div>
+		</div>
+		<!-- free open section -->
+
+		<div class="flex my-24 gap-x-7">
+			<!-- left  section -->
+
+			<div>
+				<!-- laptop image -->
+			<img src="images/illustration-laptop-desktop.svg" width="2500px" alt="a laptop">
+			</div>
+
+			<!-- right section -->
+			<div class="text-center mr-20 mt-20">
+				<h2 class="text-left font-semibold text-3xl mt-28 ml-16 text-blue-700">
+					Free, open, simple
+				</h2>
+				<p class="text-left font-medium text-2xl mt-12 ml-16 text-gray-600">
+					Blogr is a free and open source application backed by a large
+					community of helpful developers. It supports features such as code
+					syntax highlighting, RSS feeds, social media integration, third-party
+					commenting tools, and works seamlessly with Google Analytics. The
+					architecture is clean and is relatively easy to learn.
+				</p>
+
+				<h2 class="text-left font-semibold text-3xl ml-16 mt-24 text-blue-700">
+					Powerful tooling
+				</h2>
+				<p
+					class="text-left font-medium text-2xl mt-12 mb-8 ml-16 text-gray-600"
+				>
+					Batteries included. We built a simple and straightforward CLI tool
+					that makes customization and deployment a breeze, but capable of
+					producing even the most complicated sites.
+				</p>
+			</div>
+		</div>
+
+		<!-- footer section -->
+
+		<div class="flex justify-around rounded-tl-full bg-gray-700 mx-auto p-28">
+			<div class="mr-24">
+				<!-- add blogr svg -->
+				<svg width="101" height="40" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M0 30.803V1.486h10.653c1.982 0 3.695.31 5.14.93 1.446.619 2.56 1.5 3.345 2.642.785 1.142 1.177 2.484 1.177 4.026 0 1.404-.303 2.636-.909 3.695a6.48 6.48 0 01-2.56 2.498c1.487.578 2.643 1.494 3.469 2.746.826 1.253 1.239 2.732 1.239 4.439 0 1.707-.44 3.18-1.322 4.418-.88 1.239-2.12 2.202-3.716 2.89-1.596.688-3.482 1.033-5.657 1.033H0zM5.946 6.565v6.73h4.046c1.35 0 2.388-.282 3.118-.846.73-.564 1.094-1.397 1.094-2.498 0-1.101-.365-1.94-1.094-2.519-.73-.578-1.769-.867-3.118-.867H5.946zm0 19.159h4.624c1.542 0 2.732-.33 3.572-.991.84-.66 1.26-1.61 1.26-2.85 0-1.238-.42-2.188-1.26-2.848-.84-.66-2.03-.991-3.572-.991H5.946v7.68zm19.282 5.079V0h5.781v30.803h-5.78zm20.893.619c-1.624 0-3.124-.29-4.5-.867a10.94 10.94 0 01-3.593-2.416 10.96 10.96 0 01-2.374-3.654c-.564-1.404-.846-2.931-.846-4.583 0-1.652.289-3.173.867-4.563a11.354 11.354 0 012.415-3.654 10.96 10.96 0 013.634-2.436c1.39-.578 2.91-.867 4.562-.867 1.625 0 3.125.289 4.501.867a10.94 10.94 0 013.592 2.416 11.01 11.01 0 012.375 3.633c.564 1.39.846 2.911.846 4.563 0 1.651-.289 3.179-.867 4.583a11.297 11.297 0 01-2.416 3.675 10.96 10.96 0 01-3.633 2.436c-1.39.578-2.911.867-4.563.867zm.083-5.203c1.046 0 1.982-.275 2.808-.825.825-.551 1.48-1.301 1.96-2.25.483-.95.723-2.03.723-3.242 0-1.211-.24-2.292-.722-3.241-.482-.95-1.136-1.7-1.961-2.25-.826-.551-1.762-.826-2.808-.826-1.046 0-1.982.275-2.808.825-.826.55-1.48 1.301-1.961 2.25-.482.95-.723 2.03-.723 3.242 0 1.211.241 2.292.723 3.241.482.95 1.135 1.7 1.961 2.25.826.551 1.762.826 2.808.826zm24.155 3.964a9.13 9.13 0 01-3.86-.826 9.492 9.492 0 01-3.118-2.291c-.881-.977-1.57-2.12-2.065-3.427-.495-1.308-.743-2.719-.743-4.233 0-1.569.255-3.02.764-4.356a10.614 10.614 0 012.147-3.489 10.174 10.174 0 013.22-2.333c1.225-.564 2.554-.846 3.985-.846 1.404 0 2.67.282 3.799.846a7.402 7.402 0 012.807 2.457l.124-2.684h5.327v19.2c0 1.68-.269 3.207-.805 4.584-.537 1.376-1.301 2.56-2.292 3.55a10.231 10.231 0 01-3.53 2.292c-1.363.537-2.87.805-4.522.805-1.624 0-3.083-.254-4.376-.764a10.468 10.468 0 01-3.386-2.126 10.035 10.035 0 01-2.271-3.18L67.097 32a5.452 5.452 0 001.92 1.879c.784.454 1.672.681 2.663.681 1.074 0 2.003-.24 2.787-.723.785-.481 1.397-1.156 1.838-2.023.44-.867.66-1.879.66-3.035v-1.775a7.793 7.793 0 01-2.828 2.333c-1.143.564-2.402.846-3.778.846zm1.404-5.12c1.018 0 1.92-.254 2.704-.764a5.556 5.556 0 001.879-2.064c.468-.867.702-1.851.702-2.952 0-1.102-.234-2.086-.702-2.953a5.556 5.556 0 00-1.879-2.064c-.784-.51-1.686-.764-2.704-.764-1.019 0-1.92.255-2.705.764a5.556 5.556 0 00-1.879 2.064c-.468.867-.702 1.851-.702 2.953 0 1.1.234 2.085.702 2.952a5.556 5.556 0 001.88 2.064c.784.51 1.685.764 2.704.764zm15.607 5.74V9h5.327l.206 3.304c.55-1.157 1.294-2.044 2.23-2.664.936-.62 2.037-.929 3.303-.929.386 0 .77.035 1.156.103.386.07.73.159 1.033.269l-.62 5.698a4.361 4.361 0 00-.929-.227 7.495 7.495 0 00-.97-.062c-1.597 0-2.822.489-3.675 1.466-.853.977-1.28 2.36-1.28 4.15v10.694h-5.78z"
+						fill="#FFF"
+						fill-rule="nonzero"
+					/>
+				</svg>
+			</div>
+			<div>
+				<h3 class="mb-8 text-lg text-gray-50 font-semibold">Product</h3>
+				<ul>
+					<li class="text-md text-gray-200 hover:underline mb-2">Overview</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">Pricing</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">
+						MarketPlace
+					</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">Feature</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="mb-8 text-lg text-gray-50 font-semibold">Company</h3>
+				<ul>
+					<li class="text-md text-gray-200 hover:underline mb-2">Overview</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">Pricing</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">
+						MarketPlace
+					</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">Feature</li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="mb-8 text-lg text-gray-50 font-semibold">Connect</h3>
+				<ul>
+					<li class="text-md text-gray-200 hover:underline mb-2">Contact</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">Newsletter</li>
+					<li class="text-md text-gray-200 hover:underline mb-2">LinkedIN</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn -->
+
+		<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mayank latke</a>.
+  </div> -->
+	</body>
+</html>

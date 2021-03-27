@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back_img {
+	background-image: url("images/bg-pattern-circles.svg");
+}
+
+.rounds {
+	border-bottom-left-radius: 10rem;
+}
+
+.rounds-tr {
+	border-top-right-radius: 10rem;
+}
+
+.rounds-bl {
+	border-bottom-left-radius: 10rem;
+}
+
+.rounds-tl {
+	border-top-left-radius: 4.5rem;
+}
